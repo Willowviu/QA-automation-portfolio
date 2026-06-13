@@ -16,21 +16,49 @@
     }
 
     header {
-      background: #111827;
+      position: relative;
+      background: url('FranSurfLombok.PNG') center center / cover no-repeat;
       color: white;
-      padding: 60px 20px;
+      min-height: 460px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       text-align: center;
+      padding: 40px 20px;
+    }
+
+    header::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.48);
+    }
+
+    .header-content {
+      position: relative;
+      z-index: 1;
+      max-width: 900px;
     }
 
     header h1 {
       margin: 0;
-      font-size: 2.2rem;
+      font-size: 2.9rem;
+      letter-spacing: 0.5px;
     }
 
     header p {
-      font-size: 1.1rem;
-      margin-top: 12px;
-      color: #d1d5db;
+      font-size: 1.2rem;
+      margin-top: 14px;
+      color: #e5e7eb;
+    }
+
+    .hero-subtitle {
+      margin-top: 18px;
+      font-size: 1rem;
+      color: #f3f4f6;
+      max-width: 720px;
+      margin-left: auto;
+      margin-right: auto;
     }
 
     main {
@@ -93,14 +121,42 @@
     ul {
       padding-left: 20px;
     }
+
+    @media (max-width: 700px) {
+      header {
+        min-height: 380px;
+        padding: 30px 16px;
+      }
+
+      header h1 {
+        font-size: 2rem;
+      }
+
+      header p {
+        font-size: 1rem;
+      }
+
+      .hero-subtitle {
+        font-size: 0.95rem;
+      }
+
+      section {
+        padding: 22px;
+      }
+    }
   </style>
 </head>
 
 <body>
 
   <header>
-    <h1>Francisco José de Miguel Arroyo</h1>
-    <p>QA Automation Engineer | API Testing | Postman | Selenium | Playwright | Java | TypeScript | CI/CD</p>
+    <div class="header-content">
+      <h1>Francisco José de Miguel Arroyo</h1>
+      <p>QA Automation Engineer | API Testing | Postman | Selenium | Playwright | Java | TypeScript | CI/CD</p>
+      <div class="hero-subtitle">
+        Building reliable software through testing, automation and continuous improvement.
+      </div>
+    </div>
   </header>
 
   <main>
