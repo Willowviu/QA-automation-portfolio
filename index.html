@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,7 +18,12 @@
 
     header {
       position: relative;
-      background: url('FransurfLombok.PNG') center center / cover no-repeat;
+      background-image:
+        linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+        url("./FransurfLombok.PNG");
+      background-position: center center;
+      background-size: cover;
+      background-repeat: no-repeat;
       color: white;
       min-height: 460px;
       display: flex;
@@ -25,13 +31,6 @@
       justify-content: center;
       text-align: center;
       padding: 40px 20px;
-    }
-
-    header::before {
-      content: "";
-      position: absolute;
-      inset: 0;
-      background: rgba(0, 0, 0, 0.48);
     }
 
     .header-content {
@@ -331,3 +330,4 @@
 
 </body>
 </html>
+```
