@@ -55,7 +55,7 @@ Currently working in QA within a software company, participating in functional t
 
 You can view the portfolio here:
 
-https://willowviu.github.io/qa-automation-portfolio/
+https://willowviu.github.io/QA-automation-portfolio/
 
 ## Contact
 
